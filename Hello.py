@@ -7,7 +7,7 @@ translator = Translator()
 
 message("Hello bot!", is_user=True)  # align's the message to the right
 
-text = "This is a test sentence for English translation."
+text = "Your future is shaped by how you act today. Pay more attention to challenges than to fears."
 
 # 체크박스를 생성하여 체크 여부에 따라 text_highlighter 함수 실행 여부를 결정
 with st.container():
@@ -36,5 +36,6 @@ material_result_list = []
 # 영어로 번역
 for material in material_list:
     material_result_list.append(translator.translate(material, src='en', tgt='kr'))
+
 
 st.write("번역된 결과:", material_result_list)
